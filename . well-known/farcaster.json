@@ -1,3 +1,9 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjQ5MDE1OSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGE0Qjc0ZWRENjE4NzdGNWQyODdiMjZDYTNFQ0E2NDRDMGIyMjVkOGEifQ",
+    "payload": "eyJkb21haW4iOiJnYW1lLXRoZXRhLWVpZ2h0LnZlcmNlbC5hcHAifQ",
+    "signature": "MHgwYzk2Yzc0ZTM0Yjc5NjE1YTYzMGU1NDI0MDEzZDgyZWM5MTZlZTYzNDcwYWJkZDJmMTAzNjFmZmFjNjE4ZjNmMDk3Y2YwMjRjOGNlMGEyYjc3NzUxNzJhOTYyMWUwMzgzMDM2ODhmNjJhZmEyOTVhMjAwOGVkOThkYjE5YWNiYzFj"
+  },
 "frame": {
   "version": "1",
   "name": "Rock Paper Scissors",
