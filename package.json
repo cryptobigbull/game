@@ -1,0 +1,10 @@
+{
+  "name": "game-theta-eight",
+  "version": "1.0.0",
+  "dependencies": {
+    "@vercel/og": "^0.6.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
