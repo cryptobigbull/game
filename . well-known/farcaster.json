@@ -1,4 +1,4 @@
-
+{
   "accountAssociation": {
     "header": "eyJmaWQiOjQ5MDE1OSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGE0Qjc0ZWRENjE4NzdGNWQyODdiMjZDYTNFQ0E2NDRDMGIyMjVkOGEifQ",
     "payload": "eyJkb21haW4iOiJnYW1lLXRoZXRhLWVpZ2h0LnZlcmNlbC5hcHAifQ",
@@ -14,3 +14,4 @@
     "splashImageUrl": "https://game-theta-eight.vercel.app/preview.png",
     "splashBackgroundColor": "#f0f0f0"
   }
+}
