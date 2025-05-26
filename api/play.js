@@ -22,13 +22,13 @@ export default async function handler(req, res) {
 
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
     let result = '';
-    if (userChoice === computerChoice) result = "Tie";
+    if (userChoice === computerChoice) result = "Tie 🤝";
     else if (
       (userChoice === 'rock' && computerChoice === 'scissors') ||
       (userChoice === 'paper' && computerChoice === 'rock') ||
       (userChoice === 'scissors' && computerChoice === 'paper')
-    ) result = "Win";
-    else result = "Lose";
+    ) result = "Win 🎉";
+    else result = "Lose 😞";
 
     if (req.body.untrustedData && req.body.untrustedData.buttonIndex) {
       res.setHeader('Content-Type', 'text/html');
@@ -43,8 +43,8 @@ export default async function handler(req, res) {
             <meta property="fc:frame:image:aspect_ratio" content="1.91:1" />
             <meta property="fc:frame:button:1" content="You: ${userChoice}" />
             <meta property="fc:frame:button:2" content="CPU: ${computerChoice}" />
-            <meta property="fc:frame:button:3" content="Result: ${result}" />
-            <meta property="fc:frame:button:4" content="Play Again" />
+            <meta property="fc:frame:button:3" content="${result}" />
+            <meta property="fc:frame:button:4" content="Play Again 🔄" />
             <meta property="fc:frame:post_url" content="https://game-theta-eight.vercel.app/api/play" />
           </head>
           <body>
