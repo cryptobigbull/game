@@ -1,0 +1,10 @@
+"frame": {
+  "version": "1",
+  "name": "Rock Paper Scissors",
+  "iconUrl": "https://game-theta-eight.vercel.app/icon.png",
+  "homeUrl": "https://game-theta-eight.vercel.app/",
+  "imageUrl": "https://game-theta-eight.vercel.app/og-image.png",
+  "buttonTitle": "Play Game",
+  "splashImageUrl": "https://game-theta-eight.vercel.app/splash.png",
+  "splashBackgroundColor": "#ffffff"
+}
