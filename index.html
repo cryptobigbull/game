@@ -5,25 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rock-Paper-Scissors Mini App</title>
 
-  <!-- Farcaster Frame meta tags -->
+  <!-- Open Graph Tags for Link Previews -->
   <meta property="og:title" content="Play Rock-Paper-Scissors!" />
+  <meta property="og:description" content="Challenge your friends in a classic Rock Paper Scissors game on Farcaster!" />
   <meta property="og:image" content="https://game-theta-eight.vercel.app/preview.png" />
-  <meta name="fc:frame" content="vNext" />
-  <meta name="fc:frame:button:1" content="Play Now" />
-  <meta name="fc:frame:post_url" content="https://game-theta-eight.vercel.app/api/play" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+
+  <!-- Farcaster Frame Meta Tags -->
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://game-theta-eight.vercel.app/preview.png" />
+  <meta property="fc:frame:image:aspect_ratio" content="1.91:1" />
+  <meta property="fc:frame:button:1" content="Play Rock ✊" />
+  <meta property="fc:frame:button:2" content="Play Paper ✋" />
+  <meta property="fc:frame:button:3" content="Play Scissors ✂️" />
+  <meta property="fc:frame:post_url" content="https://game-theta-eight.vercel.app/api/play" />
 
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-    button { margin: 10px; font-size: 18px; padding: 10px 20px; }
-    #result { margin-top: 20px; font-weight: bold; font-size: 20px; }
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      padding: 20px; 
+      background-color: #f0f0f0; 
+    }
+    h1 { 
+      color: #333; 
+      font-size: 32px; 
+      margin-bottom: 20px; 
+    }
+    p { 
+      font-size: 18px; 
+      color: #555; 
+    }
+    button { 
+      margin: 10px; 
+      font-size: 18px; 
+      padding: 10px 20px; 
+      background-color: #6200ea; 
+      color: white; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
+      transition: background-color 0.3s; 
+    }
+    button:hover { 
+      background-color: #3700b3; 
+    }
+    #result { 
+      margin-top: 20px; 
+      font-weight: bold; 
+      font-size: 20px; 
+      color: #333; 
+    }
   </style>
 </head>
 <body>
   <h1>Rock-Paper-Scissors</h1>
   <p>Pick your move:</p>
-  <button onclick="play('rock')">Rock</button>
-  <button onclick="play('paper')">Paper</button>
-  <button onclick="play('scissors')">Scissors</button>
+  <button onclick="play('rock')">Rock ✊</button>
+  <button onclick="play('paper')">Paper ✋</button>
+  <button onclick="play('scissors')">Scissors ✂️</button>
 
   <div id="result"></div>
 
