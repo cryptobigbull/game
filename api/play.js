@@ -56,13 +56,16 @@ export default async function handler(req, res) {
 
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
     let result = '';
-    if (userChoice === computerChoice) result = "Tie";
+    if (userChoice === computerChoice) result = 'Tie';
     else if (
       (userChoice === 'rock' && computerChoice === 'scissors') ||
       (userChoice === 'paper' && computerChoice === 'rock') ||
       (userChoice === 'scissors' && computerChoice === 'paper')
-    ) result = "Win";
-    else result = "Lose";
+    ) result = 'Win';
+    else result = 'Lose';
+
+    // Generate the URL for the dynamic result image
+    const resultImageUrl = `https://game-theta-eight.vercel.app/api/result-image?userChoice=${userChoice}&computerChoice=${computerChoice}&result=${result}`;
 
     if (req.body.untrustedData && req.body.untrustedData.buttonIndex) {
       res.setHeader('Content-Type', 'text/html');
@@ -72,9 +75,9 @@ export default async function handler(req, res) {
           <head>
             <meta charset="UTF-8" />
             <meta property="og:title" content="Rock Paper Scissors Result" />
-            <meta property="og:image" content="https://game-theta-eight.vercel.app/preview.png" />
+            <meta property="og:image" content="${resultImageUrl}" />
             <meta property="fc:frame" content="vNext" />
-            <meta property="fc:frame:image" content="https://game-theta-eight.vercel.app/preview.png" />
+            <meta property="fc:frame:image" content="${resultImageUrl}" />
             <meta property="fc:frame:image:aspect_ratio" content="1.91:1" />
             <meta property="fc:frame:button:1" content="Play Again" />
             <meta property="fc:frame:post_url" content="https://game-theta-eight.vercel.app/api/play" />
